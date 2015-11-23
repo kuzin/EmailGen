@@ -33,8 +33,12 @@ table {
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
   width: 100%;
+  border-spacing: 0;
+  border: 0;
 
   td {
+    border: 0;
+    border-spacing: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 14px;
     vertical-align: top;

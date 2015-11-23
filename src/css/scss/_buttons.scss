@@ -39,13 +39,16 @@
 .btn-primary {
 
   table td {
-    background-color: $primary-color;
+    background-color: #d21492;
   }
 
   a{
-    background-color: $primary-color;
-    border-color: $primary-color;
-    color: #ffffff;
+    background-color: #d21492;
+    border-color: #d21492;
+    color: #ffffff !important;
+  }
+  a:link, a:visited, a:active {
+    color: #ffffff !important;
   }
 }
 
@@ -53,12 +56,85 @@
 .btn-secondary {
 
   table td {
-    background-color: transparent;
+    background-color: $primary-color;
   }
 
   a{
-    background-color: transparent;
+    background-color: $primary-color;
     border-color: $primary-color;
-    color: $primary-color;
+    color: #ffffff !important;
+  }
+  a:link, a:visited, a:active {
+    color: #ffffff !important;
+  }
+}
+
+// Secondary button
+.btn-sparkhire {
+
+  table td {
+    background-color: #f47321;
+  }
+
+  a{
+    background-color: #f47321;
+    border-color: #f47321;
+    color: #ffffff !important;
+  }
+  a:link, a:visited, a:active {
+    color: #ffffff !important;
+  }
+}
+
+.btn-inline {
+    width: auto !important;
+    display: inline-block !important;
+    table td {
+    background-color: $primary-color;
+  }
+
+  a{
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: #ffffff !important;
+  }
+  a:link, a:visited, a:active {
+    color: #ffffff !important;
+  }
+}
+
+.btn-inline-secondary {
+    width: auto !important;
+    display: inline-block !important;
+    table td {
+      background-color: #d21492;
+    }
+  a{
+    background-color: #d21492;
+    border-color: #d21492;
+    color: #ffffff !important;
+  }
+  a:link, a:visited, a:active {
+    color: #ffffff !important;
+  }
+}
+
+
+.btn-tertiary {
+    td {
+        padding: 0 !important;
+    }
+    table td {
+        padding: 0 !important;
+        background-color: #8d52a4;
+  }
+  a{
+    padding: 4px 8px !important;
+    background-color: #8d52a4;
+    border-color: #8d52a4;
+    color: #ffffff !important;
+  }
+  a:link, a:visited, a:active {
+    color: #ffffff !important;
   }
 }

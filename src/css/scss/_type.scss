@@ -2,50 +2,121 @@
     TYPOGRAPHY
 ------------------------------------- */
 
+.dark {
+  tr td { color: #ffffff !important; }
+  tr td a {
+    color: #c7bada;
+  }
+  tr td .btn a {
+        color: #ffffff !important;
+    }
+  tr td p.help-p {
+    background-image: url(#{$jotprefix}help-light.png) !important;
+  }
+  tr td h1, td h2, td h3, td h4, td p { color: #ffffff !important }
+  td p {
+    font-weight: 500 !important;
+  }
+}
+
 h1,
 h2,
 h3,
-h4 {
-  color: $font-color !important;
+h4,
+h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 400;
-  line-height: 1.4em;
-  margin: 0;
-  margin-bottom: 30px;
 }
 
 h1 {
-  font-size: 38px;
-  text-transform: capitalize;
-  font-weight: 300;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 200;
+  margin: 0 0 10px 0;
+  strong {
+    font-weight: 500;
+  }
 }
 h2 {
-  font-size: 24px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: -10px;
 }
 h3 {
-  font-size: 18px;
+  font-size: 28px !important;
+  margin: 0 0 15px 0;
+  line-height: 34px;
+  font-weight: 300;
 }
 h4 {
-  font-size: 14px;
-  font-weight:500;
+  font-size: 15px;
+  font-weight:600;
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  &.help-p {
+    padding-left: 30px;
+    background: url(#{$jotprefix}help-light.png) no-repeat 0 4px;
+  }
+}
+
+h6 {
+    font-size: 18px;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 400;
+    line-height: 26px;
+    strong {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+p {
+  margin: 15px 0;
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+  &.help-p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 30px;
+    background-image: url(#{$jotprefix}help-dark.png);
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+  }
 }
 
 p,
 ul,
 ol {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 15px;
-
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  margin: 0 0 18px 0;
   li {
-    list-style-position: inside;
-    margin-left: 5px;
+    margin-bottom: 5px;
   }
+}
+
+ul,
+ol {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        margin-left: 0 !important;
+        list-style: none;
+        display: block;
+        background: url(#{$jotprefix}caret-dark.png) no-repeat 0 3px;
+        padding-left: 20px;
+    }
 }
 
 a {
   color: $primary-color;
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: 600;
 }

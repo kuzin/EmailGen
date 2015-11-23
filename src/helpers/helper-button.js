@@ -1,4 +1,4 @@
-// 
+//
 // Helper for bullet proof buttons
 // Type accepts 'primary' or 'secondary'
 //
@@ -13,7 +13,7 @@ module.exports.button = function (params) {
           <table cellpadding="0" cellspacing="0">\
             <tr>\
               <td>\
-                <a href="' + params.hash.url + '">' + params.hash.title + '</a>\
+                <a style="color:#ffffff;" color="#ffffff" href="' + params.hash.url + '"><font color="#ffffff">' + params.hash.title + '</font></a>\
               </td>\
             </tr>\
           </table>\

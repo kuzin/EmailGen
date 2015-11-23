@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>{{ subject }}</title>
 <link href="../src/css/main.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
@@ -13,7 +12,42 @@
 	<tr>
 		<td></td>
 		<td class="container">
-			<div class="content">{{ body }}</div>
+			<div class="content">
+                <div class="header">
+                  <table>
+                    <tr>
+                      <td class="align-center">
+                        <a href="http://jazz.co"><img src="http://info.jazz.co/rs/786-OHD-890/images/jazz-logo.png" border="0" height="21" alt="Jazz"></a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                {{ body }}
+                <div class="footer">
+                  <table>
+                    <tr>
+                      <td class="align-center">
+                        <div class='social'>
+                            <a href="https://www.facebook.com/jazzdotco"><img src="http://info.jazz.co/rs/786-OHD-890/images/facebook.png" border="0" alt="facebook" width="20" /></a>
+                            &nbsp;&nbsp;
+                            <a href="https://twitter.com/JazzDotCo"><img src="http://info.jazz.co/rs/786-OHD-890/images/twitter.png" border="0" alt="Twitter" width="20" /></a>
+                            &nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/company/771740"><img src="http://info.jazz.co/rs/786-OHD-890/images/linkedinKuzin.png" border="0"alt="LinkedIn" width="20" /></a>
+                        </div>
+                        <p style="margin-top: 10px;">
+                            We sent this email to <a href="mailto:*|EMAIL|*">*|EMAIL|*</a> because it was either registered to a user of Jazz, or it was sent on behalf of one of our users. If you feel that the content of this email or use of this email address is questionable, please notify us at <a href="mailto:abuse@jazz.co">abuse@jazz.co</a>.
+                        </p>
+                        <p>
+                            Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <p style="background: transparent; color: #556473; border-radius: 4px; text-align: center; padding: 5px; line-height: 18px;"><font face="Verdana" size="1">This email was sent to *|EMAIL|*. You may <a href="*|UNSUB|*">unsubscribe</a> or <a href="*|UPDATE_PROFILE|*">update your profile</a> at any time.<br/> *|HTML:LIST_ADDRESS_HTML|*</font></p>
+                </div>
+            </div>
 		</td>
 		<td></td>
 	</tr>

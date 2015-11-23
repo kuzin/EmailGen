@@ -2,21 +2,16 @@
     BODY & CONTAINER
 ------------------------------------- */
 
-body{
-  background-color: $grey;
-}
-
+body,
 .body {
   background-color: $grey;
   width: 100%;
 }
 
-/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
   display: block;
-  Margin: 0 auto !important; /* makes it centered */
+  margin: 0 auto !important;
   max-width: $width;
-  padding: 10px;
   width: auto !important;
   width: $width;
 }
@@ -26,7 +21,6 @@ body{
   display: block;
   margin: 0 auto;
   max-width: $width;
-  padding: 10px;
 }
 
 
@@ -35,24 +29,19 @@ body{
 ------------------------------------- */
 
 .main {
-  background: #ffffff;
-  border: 1px solid darken($grey, 5);
-  border-radius: $br;
+  border: none;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper {
   padding: $padding;
 }
 
-// Adds padding to content - use this instead of paragraphs for consistent padding/margin rendering
-.content-block {
-  padding: 0 0 $padding;
-}
-
 .header {
   margin-bottom: $padding;
-  margin-top: ($padding - 10);
+  margin-top: $padding;
   width: 100%;
 }
 
@@ -61,7 +50,7 @@ body{
   width: 100%;
 
   * {
-    color: #999999;
+    color: #87919b;
     font-size: 12px;
   }
 

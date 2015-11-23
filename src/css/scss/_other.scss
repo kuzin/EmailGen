@@ -2,6 +2,94 @@
     OTHER STYLES THAT MIGHT BE USEFUL
 ------------------------------------- */
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+.me-dash {
+    background-color: #ffffff;
+    h1, h3, h2 {
+        strong {
+            color: #8d5aa2;
+        }
+    }
+}
+
+.interviews {
+    h1 {
+        font-size: 36px !important;
+    }
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.hero {
+    background-color: #5a2d8a;
+    @include border-radius(8px 8px 0 0);
+}
+
+.purple {
+    background-color: #5a2d8a;
+}
+
+.lgrey {
+    background-color: #e6ebeb;
+}
+
+.mgrey {
+    background-color: #87919b;
+}
+
+.grey {
+    background-color: #566574;
+}
+
+.rounded {
+    @include border-radius(8px);
+}
+
+.launch-image {
+    @include border-radius(8px 8px 0 0);
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.first {
+    @include border-radius(8px 8px 0 0);
+}
+
+.last {
+    @include border-radius(0 0 8px 8px);
+}
+
+.sparkhire {
+    background-color: #428bca;
+}
+.jot1-1 {
+    background-color: #38444d;
+}
+.jot1-2 {
+    background-color: #fff4ff;
+}
+
+.jot2-1 {
+    background-color: #e8edf7;
+}
+.jot2-2 {
+    background-color: #6f529b;
+}
+
+.jot4-1 {
+    background-color: #faf3ff;
+}
+.jot4-2 {
+    background-color: #e9eff7;
+}
+
 .last {
   margin-bottom: 0;
 }
@@ -20,6 +108,12 @@
 
 .align-left {
   text-align: left;
+}
+
+td[align=full] {
+    table {
+        width: 100%;
+    }
 }
 
 .clear {
@@ -46,4 +140,22 @@
   mso-hide: all;
   visibility: hidden;
   width: 0;
+}
+
+table.helpers {
+    @include border-radius(0 0 4px 4px);
+    background: #5a2d8a;
+}
+table.help {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 5px !important;
+    tr {
+        background-color: #352054;
+        td {
+            color: #fff;
+            padding: 10px 15px;
+            vertical-align: center;
+        }
+    }
 }
